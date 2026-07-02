@@ -42,23 +42,23 @@ export const Hero = () => {
       </div>
 
       {/* Green Dots */}
-<div className="absolute inset-0 overflow-hidden pointer-events-none">
-  {[...Array(30)].map((_, i) => (
-    <div
-      key={i}   
-      className="absolute w-1.5 h-1.5 rounded-full opacity-60"
-      style={{
-        backgroundColor: "#20B2A6",
-        left: `${Math.random() * 100}%`,
-        top: `${Math.random() * 100}%`,
-        animation: `slow-drift ${
-          15 + Math.random() * 20
-        }s ease-in-out infinite`,
-        animationDelay: `${Math.random() * 5}s`,
-      }}
-    />
-  ))}
-</div>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(30)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1.5 h-1.5 rounded-full opacity-60"
+            style={{
+              backgroundColor: "#20B2A6",
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animation: `slow-drift ${
+                15 + Math.random() * 20
+              }s ease-in-out infinite`,
+              animationDelay: `${Math.random() * 5}s`,
+            }}
+          />
+        ))}
+      </div>
 
       {/* Content */}
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
@@ -84,9 +84,10 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Ashen Kavisha — a Data Sciencetist specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
-                applications that users love.
+                Hi, I'm Ashen Kavisha — a Data Science undergraduate and
+                full-stack developer specializing in React, Spring Boot, and
+                Machine Learning. I build scalable, data-driven applications
+                that solve real problems.
               </p>
             </div>
 
@@ -95,10 +96,12 @@ export const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="/cv.pdf" download="Ashen_Kavisha_CV.pdf">
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}
@@ -120,7 +123,7 @@ export const Hero = () => {
             </div>
           </div>
           {/* Right Column - Profile Image */}
-          <div className="relatice animate-fade-in animation-delay-300">
+          <div className="relative animate-fade-in animation-delay-300">
             {/* Profile Image */}
             <div className="relative max-w-md mx-auto">
               <div
@@ -132,7 +135,7 @@ export const Hero = () => {
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
                   src="/profile-photo.jpg"
-                  alt="Pedro Machado"
+                  alt="Ashen Kavisha"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
 
