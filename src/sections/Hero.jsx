@@ -1,34 +1,40 @@
+import { useState } from "react";
 import { Button } from "@/components/Button";
 import {
   ArrowRight,
   ChevronDown,
   Download,
 } from "lucide-react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
+  "Python",
+  "Java",
+  "JavaScript",
+  "C#",
+  "Kotlin",
+  "C++",
   "React",
-  "Next.js",
-  "TypeScript",
+  "React Native",
   "Node.js",
-  "GraphQL",
-  "PostgreSQL",
-  "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
-  "Vercel",
+  "Express.js",
+  "Next.js",
+  "Spring Boot",
   "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
+  "MongoDB",
+  "MySQL",
+  "MSSQL",
+  "PostgreSQL",
+  "TensorFlow / Keras",
+  "Docker",
   "Git",
   "GitHub Actions",
 ];
 
 export const Hero = () => {
+  const [showAllSkills, setShowAllSkills] = useState(false);
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Bg */}
@@ -68,7 +74,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                Data Science Undergraduate • Full-Stack Developer
               </span>
             </div>
 
@@ -84,10 +90,11 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Ashen Kavisha — a Data Science undergraduate and
-                full-stack developer specializing in React, Spring Boot, and
-                Machine Learning. I build scalable, data-driven applications
-                that solve real problems.
+                Hi, I'm Ashen Kavisha — a second-year IT undergraduate at
+                SLIIT specializing in Data Science, with hands-on experience
+                in full-stack development, mobile apps, and machine learning.
+                I build scalable, data-driven applications that solve real
+                problems.
               </p>
             </div>
 
@@ -108,13 +115,17 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: FaGithub, href: "#" },
-                { icon: FaLinkedin, href: "#" },
-                { icon: FaTwitter, href: "#" },
+                { icon: FaGithub, href: "https://github.com/AshenKavisha" },
+                {
+                  icon: FaLinkedin,
+                  href: "https://linkedin.com/in/ashen-kavisha-lakshan",
+                },
               ].map((social, idx) => (
                 <a
                   key={idx}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
                   {<social.icon className="w-5 h-5" />}
@@ -150,9 +161,9 @@ export const Hero = () => {
                 </div>
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">5+</div>
+                  <div className="text-2xl font-bold text-primary">6+</div>
                   <div className="text-xs text-muted-foreground">
-                    Years Exp.
+                    Projects Built
                   </div>
                 </div>
               </div>
@@ -165,25 +176,56 @@ export const Hero = () => {
           <p className="text-sm text-muted-foreground mb-6 text-center">
             Technologies I work with
           </p>
-          <div className="relative overflow-hidden">
-            <div
-              className="absolute left-0 top-0 bottom-0 w-32
-             bg-gradient-to-r from-background to-transparent z-10"
-            />
-            <div
-              className="absolute right-0 top-0 bottom-0 w-32
-             bg-gradient-to-l from-background to-transparent z-10"
-            />
-            <div className="flex animate-marquee">
-              {[...skills, ...skills].map((skill, idx) => (
-                <div key={idx} className="flex-shrink-0 px-8 py-4">
-                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
-                    {skill}
-                  </span>
-                </div>
+
+          {!showAllSkills ? (
+            <div className="relative overflow-hidden">
+              <div
+                className="absolute left-0 top-0 bottom-0 w-32
+               bg-gradient-to-r from-background to-transparent z-10"
+              />
+              <div
+                className="absolute right-0 top-0 bottom-0 w-32
+               bg-gradient-to-l from-background to-transparent z-10"
+              />
+              <div className="flex animate-marquee">
+                {[...skills, ...skills].map((skill, idx) => (
+                  <div key={idx} className="flex-shrink-0 px-8 py-4">
+                    <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
+                      {skill}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto animate-fade-in">
+              {skills.map((skill, idx) => (
+                <span
+                  key={idx}
+                  className="px-4 py-2 rounded-full glass text-sm font-medium text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
+                >
+                  {skill}
+                </span>
               ))}
             </div>
-          </div>
+          )}
+
+          {/* Expand/Collapse Skills Toggle */}
+          <button
+            type="button"
+            onClick={() => setShowAllSkills((prev) => !prev)}
+            aria-expanded={showAllSkills}
+            className="flex flex-col items-center gap-1 mx-auto mt-6 text-muted-foreground hover:text-primary transition-colors group cursor-pointer"
+          >
+            <span className="text-xs uppercase tracking-wider">
+              {showAllSkills ? "Show less" : "See all skills"}
+            </span>
+            <ChevronDown
+              className={`w-5 h-5 transition-transform duration-300 ${
+                showAllSkills ? "rotate-180" : "animate-bounce"
+              }`}
+            />
+          </button>
         </div>
       </div>
 
@@ -191,13 +233,18 @@ export const Hero = () => {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 
       animate-fade-in animation-delay-800"
       >
-        <a
-          href="#about"
-          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+        <button
+          type="button"
+          onClick={() =>
+            document
+              .querySelector("#about")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group cursor-pointer"
         >
-          <span className="text-xs uppercase tracking-wider">Scroll</span>
-          <ChevronDown className="w-6 h-6 animate-bounce" />
-        </a>
+          
+          
+        </button>
       </div>
     </section>
   );
