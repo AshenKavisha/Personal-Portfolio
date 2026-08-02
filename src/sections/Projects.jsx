@@ -10,7 +10,7 @@ const projects = [
     image: "/projects/project1.png",
     tags: ["Spring Boot", "React", "PostgreSQL"],
     link: null,
-    github: "https://github.com/AshenKavisha/ASSIGNMENTNEW",
+    github: "https://github.com/AshenKavisha/ASSIGNMENTNEW/tree/main",
   },
   {
     title: "IPO Listing Profitability Prediction",
