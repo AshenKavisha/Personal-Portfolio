@@ -10,7 +10,7 @@ const projects = [
     image: "/projects/project1.png",
     tags: ["Spring Boot", "React", "PostgreSQL"],
     link: null,
-    github: "https://github.com/AshenKavisha/assignment-service",
+    github: "https://github.com/AshenKavisha/ASSIGNMENTNEW",
   },
   {
     title: "IPO Listing Profitability Prediction",
@@ -19,7 +19,7 @@ const projects = [
     image: "/projects/project2.png",
     tags: ["TensorFlow", "Keras", "Python"],
     link: null,
-    github: "https://github.com/AshenKavisha/ipo-prediction",
+    github: "https://github.com/AshenKavisha/IPO-Prediction-with-TensorFlow-Keras",
   },
   {
     title: "Dog Breed Classifier",
@@ -28,7 +28,7 @@ const projects = [
     image: "/projects/project3.png",
     tags: ["TensorFlow", "CNN", "Python"],
     link: null,
-    github: "https://github.com/AshenKavisha/dog-breed-cnn",
+    github: "https://github.com/AshenKavisha/Image-Classification",
   },
   {
     title: "E-Library Mobile App",
