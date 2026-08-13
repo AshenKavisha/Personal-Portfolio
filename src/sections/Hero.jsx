@@ -90,7 +90,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Ashen Kavisha — a second-year IT undergraduate at
+                Hi, I'm Ashen Kavisha — a third-year IT undergraduate at
                 SLIIT specializing in Data Science, with hands-on experience
                 in full-stack development, mobile apps, and machine learning.
                 I build scalable, data-driven applications that solve real
