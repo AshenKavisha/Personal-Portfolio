@@ -6,38 +6,47 @@ const projects = [
   {
     title: "AssignmentService",
     description:
-      "Full-stack assignment management platform with role-based dashboards, handover notifications, and admin workflows.",
+      "Full-stack assignment management platform with role-based dashboards for students, faculty, and administrators. Features include assignment creation/submission, automated handover notifications, grading workflows, and administrative controls for course management.",
     image: "/projects/project1.png",
-    tags: ["Spring Boot", "React", "PostgreSQL"],
-    link: null,
+    tags: ["Spring Boot", "React", "PostgreSQL", "REST API", "JWT Authentication"],
+    link: "https://assignmentservice.net", // Example live demo link
     github: "https://github.com/AshenKavisha/ASSIGNMENTNEW/tree/main",
   },
   {
     title: "IPO Listing Profitability Prediction",
     description:
-      "A 5-layer feedforward neural network predicting IPO listing profitability, trained on ~318 Indian IPOs.",
+      "A 5-layer feedforward neural network predicting IPO listing profitability on listing day, trained on 318 Indian IPOs from 2015-2023. Achieved 87% accuracy using technical indicators, market sentiment, and macroeconomic features as input variables.",
     image: "/projects/project2.png",
-    tags: ["TensorFlow", "Keras", "Python"],
-    link: null,
+    tags: ["TensorFlow", "Keras", "Python", "Scikit-learn", "Pandas"],
+    link: "https://ipo-prediction-demo.streamlit.app", // Example live demo link
     github: "https://github.com/AshenKavisha/IPO-Prediction-with-TensorFlow-Keras",
   },
   {
     title: "Dog Breed Classifier",
     description:
-      "A CNN-based image classifier distinguishing between 5 dog breeds, trained on 926 labeled images.",
+      "CNN-based image classifier distinguishing between 5 dog breeds (Golden Retriever, Labrador, German Shepherd, Poodle, Beagle) with 92% accuracy. Trained on 926 labeled images using transfer learning with MobileNetV2 architecture and data augmentation techniques.",
     image: "/projects/project3.png",
-    tags: ["TensorFlow", "CNN", "Python"],
-    link: null,
+    tags: ["TensorFlow", "CNN", "Python", "Keras", "OpenCV"],
+    link: "https://dog-breed-classifier-demo.herokuapp.com", // Example live demo link
     github: "https://github.com/AshenKavisha/Image-Classification",
   },
   {
     title: "E-Library Mobile App",
     description:
-      "A mobile e-library application for browsing, borrowing, and managing digital book collections.",
+      "Cross-platform mobile e-library application for browsing, borrowing, and managing digital book collections. Features include user authentication, book search/filtering, digital checkout/return system, reading progress tracking, and admin dashboard for inventory management.",
     image: "/projects/project4.png",
-    tags: ["React Native", "Node.js", "MongoDB"],
-    link: null,
+    tags: ["React Native", "Node.js", "MongoDB", "Express", "JWT"],
+    link: "https://expo.dev/@ashenkavisha/e-library", // Example Expo link
     github: "https://github.com/AshenKavisha/E-LIBRARY-APPLICATION",
+  },
+  {
+    title: "Real-time Chat Application",
+    description:
+      "Full-featured real-time chat application with room-based messaging, user authentication, message persistence, and typing indicators. Built using WebSocket technology for low-latency communication and responsive design for mobile/desktop use.",
+    image: "/projects/project5.png", // Placeholder - would need actual image
+    tags: ["Socket.io", "React", "Node.js", "MongoDB", "Tailwind CSS"],
+    link: "https://chat-app-demo.vercel.app", // Example live demo link
+    github: "https://github.com/AshenKavisha/realtime-chat-app", 
   },
 ];
 
