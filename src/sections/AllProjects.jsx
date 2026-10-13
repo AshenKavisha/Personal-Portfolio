@@ -47,7 +47,7 @@ const projects = [
     image: "/projects/project5.png", // Placeholder - would need actual image
     tags: ["Socket.io", "React", "Node.js", "MongoDB", "Tailwind CSS"],
     link: "https://chat-app-demo.vercel.app", // Example live demo link
-    github: "https://github.com/AshenKavisha/realtime-chat-app",
+    github: "",
   },
   {
     title: "NASA APOD Gallery",
@@ -67,6 +67,25 @@ const projects = [
     link: "",
     github: "https://github.com/AshenKavisha/CI-CD-pipeline-sample-project",
   },
+
+{
+  title: "Retail Banking Data Warehouse & BI Solution",
+  description:
+    "End-to-end retail banking data warehousing and business intelligence solution built using the Czech Financial Dataset. Features include ETL pipelines, a dimensional data warehouse with transaction and loan fact tables, incremental data loading, SQL-based data marts for financial analysis, data validation and reconciliation, and interactive Power BI dashboards for transaction trends, cash flow, and regional loan performance.",
+  image: "/projects/project8.png",
+  tags: [
+    "SQL Server",
+    "T-SQL",
+    "Power BI",
+    "ETL",
+    "Data Warehousing",
+    "Data Engineering",
+    "Business Intelligence"
+  ],
+  link: "",
+  github: "https://github.com/AshenKavisha/Bank_Finance-DWBI-Solution",
+},
+
 ];
 
 export const AllProjects = () => {
