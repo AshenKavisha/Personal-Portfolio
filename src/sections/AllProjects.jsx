@@ -85,6 +85,24 @@ const projects = [
   link: "",
   github: "https://github.com/AshenKavisha/Bank_Finance-DWBI-Solution",
 },
+{
+  title: "NEXTGENEDU AI – University Admission Analysis",
+  description:
+    "University admission analysis and decision-support application built using 400 graduate applicant records. Combines statistical testing, regression model comparison, PCA regression, and Naive Bayes classification. Features include individual predictions, bulk CSV uploads, adjustable feature weights, applicant ranking, percentage and seat-based interview shortlisting, radar profiles, downloadable reports, and visual explanations of analytical findings.",
+  image: "/projects/project9.png",
+  tags: [
+    "R",
+    "Python",
+    "R Shiny",
+    "Jupyter Notebook",
+    "Statistical Modelling",
+    "Predictive Analytics",
+    "PCA",
+    "Data Visualization"
+  ],
+  link: "https://nextgenedu.shinyapps.io/nextgenedu/",
+  github: "https://github.com/IT24102228/University-Admission-Analysis",
+},
 
 ];
 
