@@ -14,14 +14,14 @@ const projects = [
     github: "https://github.com/AshenKavisha/ASSIGNMENTNEW/tree/main",
   },
   {
-    title: "IPO Listing Profitability Prediction",
-    description:
-      "A 5-layer feedforward neural network predicting IPO listing profitability on listing day, trained on 318 Indian IPOs from 2015-2023. Achieved 87% accuracy using technical indicators, market sentiment, and macroeconomic features as input variables.",
-    image: "/projects/project2.png",
-    tags: ["TensorFlow", "Keras", "Python", "Scikit-learn", "Pandas"],
-    link: "https://ipo-prediction-demo.streamlit.app", // Example live demo link
-    github: "https://github.com/AshenKavisha/IPO-Prediction-with-TensorFlow-Keras",
-  },
+  title: "Bank Marketing – Term Deposit Prediction & Call Planner",
+  description:
+    "Group machine learning project that helps a bank call centre decide which customers to phone first. Predicts who is likely to subscribe to a term deposit and ranks customers into 10 priority groups, using the UCI Bank Marketing dataset (45,211 records). My part: feature engineering and preprocessing, creating 8 new features and narrowing 68 encoded columns down to the 30 most informative. Also deployed the live Streamlit app with demo customers and CSV upload.",
+  image: "/projects/project10.png",
+  tags: ["Python", "Machine Learning", "Feature Engineering", "Scikit-learn", "XGBoost", "Pandas", "Streamlit", "Git"],
+  link: "https://ashenkavisha-bank-marketing-call-planner.streamlit.app",
+  github: "https://github.com/IT24102228/Bank-and-Marketing-ML-Model",
+},
   {
     title: "Dog Breed Classifier",
     description:
@@ -69,15 +69,7 @@ const projects = [
   link: "", 
   github: "https://github.com/AshenKavisha/CI-CD-pipeline-sample-project", 
 },
-{
-  title: "Bank Marketing – Term Deposit Prediction & Call Planner",
-  description:
-    "Group machine learning project that helps a bank call centre decide which customers to phone first. Predicts who is likely to subscribe to a term deposit and ranks customers into 10 priority groups, using the UCI Bank Marketing dataset (45,211 records). My part: feature engineering and preprocessing, creating 8 new features and narrowing 68 encoded columns down to the 30 most informative. Also deployed the live Streamlit app with demo customers and CSV upload.",
-  image: "/projects/project10.png",
-  tags: ["Python", "Machine Learning", "Feature Engineering", "Scikit-learn", "XGBoost", "Pandas", "Streamlit", "Git"],
-  link: "https://ashenkavisha-bank-marketing-call-planner.streamlit.app",
-  github: "https://github.com/IT24102228/Bank-and-Marketing-ML-Model",
-},
+
 
 ];
 
